@@ -30,7 +30,7 @@ const btnElem = document.querySelector(".btn")
     // funzione di generazione email e di refresh delle ultime
 
      function generateEmails(){
-         for(i = 1 ; i<10; i++){
+         for(let i = 0 ; i<10; i++){
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((resp)=>{
             //  console.log(resp)
             const email = resp.data.response;
